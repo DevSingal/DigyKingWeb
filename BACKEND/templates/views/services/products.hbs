@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/af06425eed.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="brand-name">
+            <a href="/">
+                <h2>DI
+                    <p class="color">GI</p> KI
+                    <p class="color"> NG</p>
+                </h2>
+            </a>
+        </div>
+        <style id="header-styling">
+            .header {
+                width: 100%;
+                height: 75px;
+                background-color: aqua;
+            }
+
+            .brand-name p {
+                display: inline;
+                margin-left: -9px;
+                color: rgb(199, 0, 139);
+            }
+
+            .brand-name a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .brand-name:hover a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .brand-name:hover p {
+                display: inline;
+                margin-left: -9px;
+                color: rgb(255, 68, 199);
+            }
+
+            .brand-name h2 {
+                font-family: 'Redressed', cursive;
+                padding: 20px;
+                padding-left: 40px;
+            }
+        </style>
+    </header>
+
+
+    <section id="product-info">
+        <h1>Checkout Page</h1>
+        <style>
+            .accordian-ctnr {
+                width: 100%;
+                background-color: rgb(221, 221, 221);
+                margin: 10px 0px;
+                margin-top: 0px;
+            }
+
+            #product-info h1 {
+                ba
+            }
+
+            .accordian-label,
+            .accordian-content {
+                padding: 14px 20px;
+            }
+
+            .accordian-label {
+                display: block;
+                color: black;
+                font-weight: 500;
+                cursor: pointer;
+                position: relative;
+                transition: background-color 0.2s ease-in;
+            }
+
+            .accordian-label:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            .accordian-label::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 30px;
+                width: 10px;
+                /* HEIGHT SHOULD BE HALF THE AMOUNT OF WIDTH  */
+                height: 5px;
+                background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FF99999;" /></svg>');
+                background-size: contain;
+                transition: transform .3s;
+            }
+
+            .accordian-content {
+                background: wheat;
+                line-height: 23px;
+                display: none;
+                transition: all .4s ease-in;
+            }
+
+            .accordian-input {
+                display: none;
+            }
+
+            .accordian-input:checked~.accordian-content {
+                display: block;
+            }
+
+            .accordian-input:checked~.accordian-label::after {
+                transform: translateY(-50%) rotate(0.5turn);
+            }
+
+            #section-2:checked~#product-info {
+                height: 240vh;
+            }
+
+            .accordian-content li {
+                margin: 20px;
+                font-size: 18px;
+
+            }
+
+            .accordian-content li .info {
+                text-align: center;
+                display: inline;
+            }
+
+            .input_2:checked~#product-info {
+                height: 240vh;
+            }
+        </style>
+        <div class="accordian-ctnr">
+            <div>
+                <input type="checkbox" name="accordian-1" id="section-1" class="accordian-input">
+                <label for="section-1" class="accordian-label"> What will you get in this Product</label>
+                <div class="accordian-content">
+                    <ol>
+                        <li>
+                            <p> Instagram Marketing :- </p>
+                            <p class="info"> We will create about 50 posts in advance at your Business or niche and will
+                                uplaod with proper SEO and marketing require for your Instagram account and we will
+                                costamize it accordingly. </p>
+                        </li>
+                        <li>
+                            <p> Facebook Marketing :-</p>
+                            <p class="info"> We will create about 50 posts in advance at your Business or niche and will
+                                uplaod with proper SEO and marketing require for your Facebook account and we will
+                                costamize it accordingly. </p>
+                        </li>
+                        <li>
+                            <p> Email Marketing :- </p>
+                            <p class="info"> We will handle and manage all of yoyr email and to appropiate marketing
+                                according to your niche or Business. </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-ctnr">
+            <form action="/service/checkout-beginner" method="POST">
+            <div class="form-info">
+                <div class="adres-ctnr">
+                    <h2>Address Information</h2>
+                    <div class="input-ctnr">
+                        <label for="input-1">Name </label>
+                        <input type="text" placeholder="Enter Your Name" required name="name" id="input-1"
+                            class="input">
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-2">E-mail</label>
+                        <input type="email" placeholder="Enter Your E-mail " required name="email" id="input-2"
+                            class="input">
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-3">Phone Number</label>
+                        <input type="text" placeholder="Enter Your Phone Number" required name="phone_number"
+                            id="input-3" class="input">
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-4">Adress</label>
+                        <input type="text" placeholder="Enter Your Adress" required name="adress" id="input-3"
+                            class="input">
+                    </div>
+                    <div class="flex">
+                        <div class="input-ctnr">
+                            <label for="input-5">City</label>
+                            <input type="text" placeholder="Enter Your City" required name="city" id="input-5"
+                                class="input">
+                        </div>
+                        <div class="input-ctnr">
+                            <label for="input-6">ZIP Code</label>
+                            <input type="text" placeholder="Enter Your ZIP Code" required name="zip_code" id="input-6"
+                                class="input">
+                        </div>
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-7">State</label>
+                        <input type="text" placeholder="Enter Your State" required name="state" id="input-7"
+                            class="input">
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-8">Country</label>
+                        <input type="text" placeholder="Enter Your Country" required name="state" id="input-8"
+                            class="input">
+                    </div>
+                </div>
+                <div class="billing-ctnr">
+                    <h2>Payment Information</h2>
+                    <div class="input-ctnr">
+                        <label for="input-9">Name on Card</label>
+                        <input type="text" placeholder="Enter the Name on Card" required name="name_on_card"
+                            id="input-9" class="input">
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-10">Card Number</label>
+                        <input type="text" placeholder="Enter Your Card Number" required name="card_number"
+                            id="input-10" class="input">
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-11">Exp. Date</label>
+                        <input type="month" placeholder="Enter Your Exp. Date" required name="exp_date" id="input-11"
+                            class="input">
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-12">CVV</label>
+                        <input type="text" placeholder="Enter Your CVV Number" required name="cvv" id="input-12"
+                            class="input">
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="product">Select Your Product</label>
+                        <select name="product-name" id="product">
+                            <option value="">Select</option>
+                            <option value="Beginner Digital Marketing Product">Beginner Digital Marketing Product</option>
+                            <option value="Premium Digital Marketing Product">Premium Digital Marketing Product</option>
+                            <option value="Advance Digital Marketing Product">Advance Digital Marketing Product</option>
+                        </select>
+                    </div>
+                    <div class="input-ctnr">
+                        <label for="input-14">Price</label>
+                        <input type="text" disabled name="price" id="input-14" class="input" style="background-color: white;">  
+                    </div>
+                </div>
+</div>
+                <div class="d-grid gap-2 col-5 mx-auto">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <style>
+            .input {
+                width: 100%;
+                display: block;
+                height: 40px;
+                margin: 10px;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            .input-ctnr{
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+            }
+
+            .input-ctnr select{
+                margin-left: 20px;
+                margin-top: 10px;
+                padding: 10px;
+            }
+            .input-ctnr select option{
+                padding: 10px;
+            }
+
+            .adres-ctnr,
+            .billing-ctnr {
+                margin-left: 30px;
+                width: 50%;
+            }
+
+            .form-ctnr {
+                width: 100%;
+                padding: 10px;
+                height: 160vh;
+                padding-top: 0px;
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            #input-5,
+            #input-6 {
+                width: 260px;
+            }
+
+            #input-4 {
+                margin-bottom: 15px;
+            }
+
+.form-info{
+    display: flex;
+}
+
+
+            .form-ctnr form {
+                display: flex;
+                flex-direction: column;
+                width: 85%;
+                margin: auto 10px;
+                margin-bottom: 15px;
+            }
+
+            .form-ctnr label {
+                font-size: 17px;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+        </style>
+
+        <style>
+            #product-info {
+                width: 100%;
+                height: 140vh;
+                background-color: rgb(245, 212, 255);
+            }
+
+            #product-info h1 {
+                text-align: center;
+                padding: 20px 0px;
+                background-color: white;
+                margin: 0px;
+            }
+        </style>
+    </section>
+
+    {{>footer}}
+    <script>
+        
+    </script>
+</body>
+
+</html>

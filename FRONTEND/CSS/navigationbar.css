@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0px;
+}
+
+.toggle-navbar {
+    display: none;
+}
+
+.navigation-bar {
+    border: blue 2px solid;
+    display: flex;
+    z-index: 4;
+    padding: 0px 20px;
+    position: fixed;
+    top: 15px;
+    width: 75vw;
+    background-color: white;
+    height: 68px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    left: 10%;
+}
+
+.brand-name p {
+    display: inline;
+    margin-left: -9px;
+    color: rgb(199, 0, 139);
+}
+
+.brand-name a {
+    text-decoration: none;
+    color: black;
+}
+
+.brand-name:hover a {
+    text-decoration: none;
+    color: black;
+}
+
+.brand-name:hover p {
+    display: inline;
+    margin-left: -9px;
+    color: rgb(255, 68, 199);
+}
+
+.brand-name h2 {
+    font-family: 'Redressed', cursive;
+    margin-top: 10px;
+    padding: 20px 40px;
+    margin-left: 20px;
+}
+
+.navigation-bar nav ul {
+    display: flex;
+    margin: 7px;
+}
+
+.navigation-bar nav ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+.navigation-bar nav ul a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease-out;
+    padding: 7px 10px;
+}
+
+.navigation-bar nav ul a:hover {
+    color: rgb(255, 61, 168);
+    padding: 7px 10px;
+}
+
+@media only screen and (max-width: 1178px) {
+    .navigation-bar {
+        border: none;
+        z-index: 4;
+        display: flex;
+        padding: 0px 20px;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        background-color: rgb(255, 220, 220);
+        height: 68px;
+        /**/
+        /* align-items: center; */
+        border-radius: 0px;
+        /* justify-content: space-between; */
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    #navigation-nav {
+        /* background-color: aqua; */
+    }
+    .navigation-bar {
+        padding: 0px;
+    }
+    .toggle-navbar {
+        display: block;
+    }
+}

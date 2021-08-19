@@ -1,0 +1,122 @@
+#pricing-section {
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(241, 241, 241);
+}
+
+.pricing-header {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+.pricing-header h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lora', serif;
+}
+
+#price_4 {
+    display: inline;
+}
+
+.rupee {
+    display: inline;
+}
+
+.pricing-table {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#monthly {}
+
+.pricing {
+    background-color: rgba(176, 91, 255, 0.781);
+    width: 75%;
+    height: 80px;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing .price {
+    font-size: 25px;
+    margin: 0px;
+    font-family: 'Acme', sans-serif;
+}
+
+.pricing-card {
+    width: 10cm;
+    height: 11cm;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(201, 201, 201);
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    transition: width 0.2s linear, height 0.2s linear;
+}
+
+.custom-pricing-table {
+    width: 50%;
+    height: 10cm;
+    background-color: white;
+}
+
+.custom-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.pricing-card h4 {
+    margin: 15px 0px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-card li {
+    text-align: center;
+}
+
+.btun a {
+    border: 3px solid #a500ce;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    border-radius: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btun:hover a {
+    background-color: #a500ce;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

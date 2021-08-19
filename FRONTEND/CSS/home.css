@@ -1,0 +1,86 @@
+#home-section {
+    height: 110vh;
+    background-image: linear-gradient(to right, rgba(255, 16, 235, 0.527), rgba(162, 0, 255, 0.637));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.front-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    margin: auto;
+    color: white;
+    width: 100%;
+    height: 70vh;
+}
+
+.front-text h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.description {
+    margin: 15px;
+}
+
+.cta a {
+    border: 3px solid #ff0095;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cta:hover a {
+    background-color: #ff0095;
+    color: white;
+    text-decoration: none;
+}
+
+.catalogue {
+    width: 74.5vw;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    /* border: blue 2px solid; */
+    box-shadow: 2px 3px 7px 0px rgb(190, 190, 190);
+    width: 9.2cm;
+    height: 7cm;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    display: flex;
+    border: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.cards img {
+    width: 75px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#home-section svg {
+    z-index: 1;
+}

@@ -1,0 +1,112 @@
+<div class="navigation-bar">
+    <div class="brand-name">
+        <a href="/">
+            <h2>DI
+                <p class="color">GI</p> KI
+                <p class="color"> NG</p>
+            </h2>
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About Us</a></li>
+            <li><a href="#testimonial-section">Testimonials</a></li>
+            <li><a href="#pricing-section">Pricing</a></li>
+            <li><a href="#blog-section">Blog</a></li>
+            <li><a href="#contact-us-section">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="toggle-navbar">
+        <nav>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About Us</a></li>
+                <li><a href="#testimonial-section">Testimonials</a></li>
+                <li><a href="#pricing-section">Pricing</a></li>
+                <li><a href="#blog-section">Blog</a></li>
+                <li><a href="#contact-us-section">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            padding: 0px;
+        }
+
+        .toggle-navbar{
+            display: none;
+        }
+
+
+        .navigation-bar {
+            border: blue 2px solid;
+            display: flex;
+            z-index: 100;
+            padding: 0px 20px;
+            position: fixed;
+            top: 15px;
+            width: 75vw;
+            background-color: white;
+            height: 68px;
+            border-radius: 50px;
+            align-items: center;
+            justify-content: space-between;
+            left: 10%;
+        }
+
+        .brand-name p {
+            display: inline;
+            margin-left: -9px;
+            color: rgb(199, 0, 139);
+        }
+
+        .brand-name a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .brand-name:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .brand-name:hover p {
+            display: inline;
+            margin-left: -9px;
+            color: rgb(255, 68, 199);
+        }
+
+        .brand-name h2 {
+            font-family: 'Redressed', cursive;
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        .navigation-bar nav ul {
+            display: flex;
+            margin: 7px;
+        }
+
+        .navigation-bar nav ul li {
+            list-style: none;
+            margin: 5px;
+        }
+
+        .navigation-bar nav ul a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.2s ease-out;
+            padding: 7px 10px;
+        }
+
+        .navigation-bar nav ul a:hover {
+            color: rgb(255, 61, 168);
+            padding: 7px 10px;
+        }
+    </style>
+
+</div>

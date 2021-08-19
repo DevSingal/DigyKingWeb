@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS LINKS  -->
+    <link rel="stylesheet" href="../CSS/about.css">
+    <link rel="stylesheet" href="../CSS/blogs.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/navigationbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/pricing.css">
+    <link rel="stylesheet" href="../CSS/testimonial.css">
+
+    <!-- source of icons  -->
+    <script src="https://kit.fontawesome.com/af06425eed.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+    <title>Digi King</title>
+
+</head>
+
+<style>
+    @media only screen and (max-width: 1178px) {
+        .catalogue {
+            width: 92vw;
+        }
+        .cards {
+            width: 7cm;
+            height: 8cm;
+        }
+        #hr {
+            display: none;
+        }
+        #ctnr-down {
+            margin-top: 0px;
+        }
+        #about-section {
+            height: 95vh;
+        }
+        .testi-flex {
+            height: 88vh;
+            align-items: flex-end;
+        }
+        .testimonial-cards {
+            font-size: 13px;
+            padding: 7px;
+            width: 7cm;
+            height: 7cm;
+            margin: 10px;
+        }
+        .testimonial-cards:hover {
+            font-size: 13px;
+            padding: 7px;
+            width: 7cm;
+            height: 7cm;
+            margin: 10px;
+        }
+        .testimonial-cards h3 {
+            font-size: 18px;
+        }
+        .testimonial-cards h4 {
+            font-size: 15px;
+        }
+        .testi-profile img {
+            width: 40px;
+            height: 40px;
+        }
+        .card {
+            margin-bottom: 15px;
+            margin-top: 40px;
+        }
+        .container-about img {
+            display: none;
+        }
+        .container-about {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .write-up {
+            width: 70%;
+        }
+    }
+</style>
+
+<style>
+    @media only screen and (max-width: 1054px) {
+        .brand-name h2 {
+            font-size: 25px;
+        }
+        nav a {
+            font-size: 15px;
+        }
+        .testi-flex {
+            display: flex;
+            flex-direction: column;
+            height: 190vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #testimonial-section {
+            height: 170vh;
+        }
+        .testimonial-cards {
+            width: 80%;
+            height: 5cm;
+        }
+        .testimonial-cards:hover {
+            width: 80%;
+            height: 5cm;
+        }
+        .testimonial-cards h3 {
+            font-size: 25px;
+        }
+        .testimonial-cards img {
+            display: none;
+        }
+        .pricing-table {
+            flex-wrap: wrap;
+            display: flex;
+        }
+        #pricing-section {
+            height: 160vh;
+        }
+    }
+</style>
+
+<style>
+    @media only screen and (max-width: 992px) {
+        .catalogue {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 9cm;
+            align-items: center;
+        }
+        .cards {
+            margin: 10px;
+            width: 75%;
+        }
+        #home-section {
+            height: 103vh;
+        }
+        #about-section {
+            margin-top: 7cm;
+        }
+        .pricing-card {
+            width: 7cm;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+            width: 10.65cm;
+            height: 8.5cm;
+        }
+        .card img {
+            margin: auto;
+            width: 5.6cm;
+            height: 4cm;
+        }
+    }
+</style>
+
+<style>
+    @media only screen and (max-width: 670px) {}
+</style>
+
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="navigation-bar">
+        <div class="brand-name">
+            <a href="/">
+                <h2>DI
+                    <p class="color">GI</p> KI
+                    <p class="color"> NG</p>
+                </h2>
+            </a>
+        </div>
+        <div id="navigation-nav">
+            <nav id="">
+                <ul>
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#testimonial-section">Testimonials</a></li>
+                    <li><a href="#pricing-section">Pricing</a></li>
+                    <li><a href="#blog-section">Blog</a></li>
+                    <li><a href="#contact-us-section">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- HOME -->
+    <section id="home-section">
+        <div class="front-display">
+            <div class="front-text">
+                <h1>We use Latest<strong>Strategies</strong> <br> to grow your bussiness</h1>
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, harum perspiciatis <br> delectus doloribus quia corporis suscipit unde cum fuga culpa.</p>
+            </div>
+            <div class="cta">
+                <a href="#about-section"> Discover More</a>
+            </div>
+        </div>
+        <div class="catalogue">
+            <div class="cards" id="card-1">
+                <img src="../IMAGES/strtgy.png" alt="">
+                <h3>Mordern Strategies</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nobis omnis nisi maxime laborum sequi.
+                </p>
+            </div>
+            <div class="cards" id="card-2">
+                <img src="../IMAGES/Relationship.png" alt="">
+                <h3>Relationship Building</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nobis omnis nisi maxime laborum sequi.
+                </p>
+            </div>
+            <div class="cards" id="card-3">
+                <img src="../IMAGES/Untitled.png" alt="">
+                <h3>Ultimate Marketing</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nobis omnis nisi maxime laborum sequi.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- *****ABOUT SECTION*****  -->
+    <section id="about-section">
+        <div class="container-about">
+            <img src="../IMAGES/marekitng-agency.png" alt="" id="img-1">
+            <div class="write-up">
+                <h2>Best Digital Marketing Agency</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum distinctio pariatur rem autem eveniet a tempora accusamus ipsam, optio maiores? Qui, laudantium architecto deserunt ipsam voluptates doloribus aspernatur voluptas placeat
+                    ex. Excepturi deserunt quae velit nesciunt assumenda ducimus exercitationem, nulla, asperiores neque autem perferendis esse fuga hic atque cupiditate aspernatur.</p>
+            </div>
+        </div>
+        <hr id="hr">
+        <div class="container-about" id="ctnr-down">
+            <div class="write-up">
+                <h2>We Help You Grow Your Business</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum distinctio pariatur rem autem eveniet a tempora accusamus ipsam, optio maiores? Qui, laudantium architecto deserunt ipsam voluptates doloribus aspernatur voluptas placeat
+                    ex. Excepturi deserunt quae velit nesciunt assumenda ducimus exercitationem, nulla, asperiores neque autem perferendis esse fuga hic atque cupiditate aspernatur.</p>
+            </div>
+            <img src="../IMAGES/digimarket.png" alt="" id="img-2">
+        </div>
+
+    </section>
+
+    <!-- ******OUR TESTIMONIALS****** -->
+    <section id="testimonial-section">
+        <div class="heading">
+            <h1>Our Testimonials</h1>
+        </div>
+        <div class="testi-flex">
+            <div class="testimonial-cards">
+                <h3>Outstanding Performance</h3>
+                <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum vero maiores dolorum, obcaecati quae exercitationem rem mollitia? Ipsam, maiores?</p>
+                <div class="testi-profile">
+                    <div class="profile-photo">
+                        <img src="../IMAGES/Untitled.png" alt="">
+                    </div>
+                    <div class="profile-desc">
+                        <h4 id="name">XYZ lorem</h4>
+                        <p id="profile-post">Our Client</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-cards">
+                <h3>Amazing Results</h3>
+                <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum vero maiores dolorum, obcaecati quae exercitationem rem mollitia? Ipsam, maiores?</p>
+                <div class="testi-profile">
+                    <div class="profile-photo">
+                        <img src="../IMAGES/Untitled.png" alt="">
+                    </div>
+                    <div class="profile-desc">
+                        <h4 id="name">XYZ lorem</h4>
+                        <p id="profile-post">Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-cards">
+                <h3>Boosted Her Business</h3>
+                <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum vero maiores dolorum, obcaecati quae exercitationem rem mollitia? Ipsam, maiores?</p>
+                <div class="testi-profile">
+                    <div class="profile-photo">
+                        <img src="../IMAGES/Untitled.png" alt="">
+                    </div>
+                    <div class="profile-desc">
+                        <h4 id="name">XYZ lorem</h4>
+                        <p id="profile-post">Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-cards">
+                <h3>Exellance</h3>
+                <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum vero maiores dolorum, obcaecati quae exercitationem rem mollitia? Ipsam, maiores?</p>
+                <div class="testi-profile">
+                    <div class="profile-photo">
+                        <img src="../IMAGES/Untitled.png" alt="">
+                    </div>
+                    <div class="profile-desc">
+                        <h4 id="name">XYZ lorem</h4>
+                        <p id="profile-post">Professor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ******PRICING SECTION****** -->
+    <section id="pricing-section">
+        <div class="pricing-header">
+            <h2>Our Pricing Plans </h2>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h4>Beginner</h4>
+                <div class="pricing">
+
+                    <p id="price-1" class="price">&#8377;5,000</p>
+                    <p>Monthly</p>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Instagram Marketing</li>
+                        <li>Facebook Marketing</li>
+                        <li>Email Marketing</li>
+                        <li><strike>Youtube Marketing</strike></li>
+
+                        <li> <strike> SEO Management</strike></li>
+                        <li><strike> Ads Management </strike></li>
+                        <li> <strike> Website Creation </strike> </li>
+                    </ul>
+                </div>
+
+                <div class="btun">
+                    <a href="/services/products"> Buy Now</a>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h4>Premium</h4>
+                <div class="pricing">
+                    <p id="price-2" class="price">&#8377;15,000</p>
+                    <p>Monthly</p>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Instagram Marketing</li>
+                        <li>Facebook Marketing</li>
+                        <li>Email Marketing</li>
+                        <li>Youtube Marketing</li>
+                        <li>SEO Management</li>
+                        <li> <strike> Ads Management </strike> </li>
+                        <li> <strike> Website Creation </strike> </li>
+                    </ul>
+                </div>
+                <div class="btun">
+                    <a href="/services/products"> Buy Now</a>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h4>Advance</h4>
+                <div class="pricing">
+                    <p id="price-3" class="price">&#8377;20,000</p>
+                    <p>Monthly</p>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Instagram Marketing</li>
+                        <li>Facebook Marketing</li>
+                        <li>Email Marketing</li>
+                        <li>Youtube Marketing</li>
+                        <li>SEO Management</li>
+                        <li>Ads Management</li>
+                        <li>Website Creation</li>
+                    </ul>
+                </div>
+                <div class="btun">
+                    <a href="/services/products"> Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="custom-flex">
+            <div class="pricing-card custom-pricing-table">
+                <h4>Custom Pricing</h4>
+                <div class="pricing">
+                    <p class="rupee price">&#8377;</p>
+                    <p class="price" id="price_4"> hello this is price</p>
+                    <p id="monthly">Monthly</p>
+                </div>
+                <div class="pricing-boxes">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input IM" checked type="checkbox" id="flexSwitchCheckChecked" onclick="insta_market()">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Instagram Marketing</label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input FB" type="checkbox" id="flexSwitchCheckChecked-1" onclick="facebook_market()" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Facebook Marketing</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input EM" type="checkbox" id="flexSwitchCheckChecked-2" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Email Marketing</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input YM" type="checkbox" id="flexSwitchCheckChecked-3" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Youtube Marketing</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input SEOM" type="checkbox" id="flexSwitchCheckChecked-4" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">SEO Marketing</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input ADSM" type="checkbox" id="flexSwitchCheckChecked-5" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Ads Management</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input WC" type="checkbox" id="flexSwitchCheckChecked-6" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Website Creation</label>
+                    </div>
+                </div>
+            </div> -->
+
+    </section>
+
+    <!-- ******OUR BLOGS****** -->
+    <section id="blog-section">
+        <div class="bolg-heading">
+            <h1>Our Blogs</h1>
+        </div>
+        <div class="our-blogs">
+
+            <div class="crd-up">
+                <div class="card">
+                    <img src="../IMAGES/digimarket.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Instagram Marketing</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="" class="btn btn-outline-success">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/marekitng-agency.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Facebook Marketing</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="" class="btn btn-outline-success">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="crd-down">
+
+                <div class="card">
+                    <img src="../IMAGES/marketing.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Email Marketing </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="" class="btn btn-outline-success">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Untitled.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Youtube Marketing</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="" class="btn btn-outline-success">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ******CONTACT US****** -->
+    <section id="contact-us-section">
+        <div class="contact-heading">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="form-ctnr">
+            <form action="/contact-us" method="POST">
+                <div class="input-ctnr">
+                    <label for="input-1">Name </label>
+                    <input type="text" placeholder="Enter Your Name" required name="name" id="input-1" class="input">
+                </div>
+                <div class="input-ctnr">
+                    <label for="input-2">E-mail</label>
+                    <input type="email" placeholder="Enter Your E-mail " required name="email" id="input-2" class="input">
+                </div>
+                <div class="input-ctnr">
+                    <label for="input-3">Phone Number</label>
+                    <input type="text" placeholder="Enter Your Phone Number" required name="phone_number" id="input-3" class="input">
+                </div>
+                <div class="input-ctnr">
+                    <label for="input-1">Your Problem/Feedback</label>
+                    <textarea name="feedback" placeholder="Enter Your Feedback" id="input-4" class="input" cols="50" rows="2"></textarea>
+                </div>
+                <div class="d-grid gap-2 col-5 mx-auto">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- *****FOOTER OF OUR Website***** -->
+
+    <footer class="footer">
+        <div class="upper-footer">
+            <div class="social-media">
+                <p>Contact Us at Our Social Media Platforms for latest udates at our menu</p>
+            </div>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook"></i> </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"> <i class="fab fa-instagram"></i> </a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"> <i class="fab fa-whatsapp"></i> </a>
+            </div>
+        </div>
+        <div class="details-footer ">
+            <div class="menu-footer imp-link">
+                <h3>Menu</h3>
+                <div class="footer-hr"></div>
+                <ul>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#pricing-section">Pricing</a></li>
+                    <li><a href="#contact-us-section">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-footer">
+                <h3>Contact Us</h3>
+                <div class="footer-hr"></div>
+                <ul>
+                    <li><i class="fas fa-home"></i>
+                        <p>Sector-1, Vaishali, Ghaziabad, UP</p>
+                    </li>
+                    <li><i class="fas fa-phone"></i>
+                        <p>+91 9899315572</p>
+                    </li>
+                    <li><i class="fas fa-envelope"></i>
+                        <p>devsingal2000@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower-footer">
+            &copy; 2021 Digy King All Rights Reserved. This Website is Created by Dev Singal
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
